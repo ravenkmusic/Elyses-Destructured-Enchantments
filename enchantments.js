@@ -9,7 +9,8 @@
  * @returns {Card} the first card in the deck
  */
 export function getFirstCard(deck) {
-    throw new Error('Implement the getFirstCard function');
+    const [firstCard] = deck;
+    return firstCard;
   }
   
   /**
@@ -20,7 +21,8 @@ export function getFirstCard(deck) {
    * @returns {Card} the second card in the deck
    */
   export function getSecondCard(deck) {
-    throw new Error('Implement the getSecondCard function');
+    const [firstCard, secondCard] = deck;
+    return secondCard;
   }
   
   /**

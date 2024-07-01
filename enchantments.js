@@ -63,6 +63,7 @@ export function getFirstCard(deck) {
    * third, and fourth cards are the face cards
    */
   export function insertFaceCards(deck) {
-    throw new Error('Implement the insertFaceCards function');
-  }
-  
+    const [firstCard, ...everythingElse] = deck;
+    const [secondCard, thirdCard, fourthCard] = FACE_CARDS;
+    return [firstCard, ...FACE_CARDS, ...everythingElse];
+  }  
